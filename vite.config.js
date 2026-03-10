@@ -8,7 +8,7 @@ export default defineConfig({
   // Base URL para el despliegue (cambiar según el entorno)
   // Para GitHub Pages, usar el nombre del repositorio: '/tecnodjesus-web/'
   // Para Vercel/Netlify u otros, normalmente '/' (raíz)
-  base: process.env.NODE_ENV === 'production' ? '/tecnodjesus-web/' : '/',
+  base: process.env.NODE_ENV === 'production' ? '/' : '/',
   // Alias para importaciones más limpias
   resolve: {
     alias: {
