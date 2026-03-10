@@ -4,7 +4,7 @@ import { supabase } from './lib/supabase'
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', component: () => import('./components/Option3.vue') },
+    { path: '/', component: () => import('./components/option3.vue') },
     { path: '/admin/login', component: () => import('./components/admin/Login.vue') },
     {
       path: '/admin',
