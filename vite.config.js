@@ -5,10 +5,14 @@ import path from 'path'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  
+  // Base URL para el despliegue (cambiar según el entorno)
+  // Para GitHub Pages, usar el nombre del repositorio: '/tecnodjesus-web/'
+  // Para Vercel/Netlify u otros, normalmente '/' (raíz)
+  base: process.env.NODE_ENV === 'production' ? '/tecnodjesus-web/' : '/',
+  // Alias para importaciones más limpias
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '/src'),
+      '@': path.resolve(__dirname, './src'),
     },
   },
   // Configuración del servidor de desarrollo
