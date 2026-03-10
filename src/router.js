@@ -5,10 +5,10 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', component: () => import('./components/option3.vue') },
-    { path: '/admin/login', component: () => import('./components/admin/Login.vue') },
+    { path: '/admin/login', component: () => import('./components/admin/login.vue') },
     {
       path: '/admin',
-      component: () => import('./components/admin/AdminLayout.vue'),
+      component: () => import('./components/admin/adminLayout.vue'),
       meta: { requiresAuth: true },
       children: [
         { path: 'productos', component: () => import('./components/admin/ProductList.vue') },
