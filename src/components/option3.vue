@@ -3,8 +3,7 @@
     <header class="main-header">
       <div class="logo-container">
         <div class="isotipo">
-          <!-- Aquí va tu logo imagen (reemplaza el span por <img>) -->
-          <span>🍊</span>
+          <img src="https://res.cloudinary.com/dn9dlda5v/image/upload/v1773115146/tecnodjesus/isotype_alternative_zbs3cw.png">
         </div>
         <h1>Tecno <span class="naranja">DJesus</span></h1>
       </div>
@@ -19,7 +18,6 @@
       </button>
     </header>
 
-    <!-- Modal de cotización -->
     <div v-if="showQuoteModal" class="modal-overlay" @click.self="closeQuoteModal">
       <div class="modal-content">
         <h2>📱 Cuéntanos qué le pasa a tu equipo</h2>
@@ -70,8 +68,8 @@
 
     <section id="inicio" class="hero">
       <div class="hero-content">
-        <h2>Servicio técnico y accesorios</h2>
-        <p>Reparación física de celulares y venta de accesorios con asesoría gratuita.</p>
+        <h2>Servicio técnico y venta de accesorios</h2>
+        <p>Reparación de celulares y venta de accesorios, con asesoría gratuita.</p>
         <div class="hero-buttons">
           <a href="#productos" class="btn btn-primary">Ver Productos</a>
           <a href="https://wa.me/573505456465" target="_blank" class="btn btn-secondary">WhatsApp</a>
@@ -96,7 +94,6 @@
                 @click="selectImage(product.id, img.image_url)"
               >
             </div>
-            <!-- Imagen grande -->
             <img
               v-if="selectedImages[product.id]"
               :src="selectedImages[product.id]"
@@ -130,8 +127,8 @@
       <h2 class="section-title">Contacto</h2>
       <div class="contact-info">
         <p><strong>📍 Dirección:</strong> calle 61 #11-09 chapinero bogota</p>
-        <p><strong>📱 WhatsApp:</strong> 573505456465</p>
-        <p><strong>🕒 Horario:</strong> Lun-Vie 9am-7pm, Sáb 9am-2pm</p>
+        <p><strong>📱 WhatsApp:</strong> +57 350 5456 465</p>
+        <p><strong>🕒 Horario:</strong> Lun-Vie 9am-7pm, Sáb 9am-7pm</p>
       </div>
       <div class="map-placeholder">
         <iframe 
