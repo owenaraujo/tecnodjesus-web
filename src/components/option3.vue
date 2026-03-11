@@ -111,6 +111,7 @@
             >
           </div>
           <h3>{{ product.name }}</h3>
+          <a> {{product.description}}</a>
           <p class="price" v-if="product.price">${{ product.price.toLocaleString() }}</p>
           <a :href="`https://wa.me/573505456465?text=${encodeURIComponent('Hola, me interesa: ' + product.name)}`" target="_blank" class="whatsapp-btn">Consultar</a>
         </div>
